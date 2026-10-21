@@ -78,8 +78,6 @@ def main():
     for i, (job_id, description) in enumerate(jobs, start=1):
         print(f"[{i}/{len(jobs)}] {job_id}")
         skills = extract_skills(description)
-        print(f"  Extracted: {skills}")
-        print(f"  Full description: {description}")
         for skill in skills:
             conn.execute(
                 "INSERT OR IGNORE INTO skills (job_id, skill_name) VALUES (?, ?)",
