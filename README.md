@@ -1,4 +1,4 @@
-# Job Market Intelligence Dashboard
+# Job Market Intelligence: India Tech Hiring Analysis
 
 A data pipeline that collects real tech job postings from the Adzuna API, stores them in SQL, analyzes hiring trends with Pandas, and uses an LLM (Gemini) to extract the specific tools and technologies employers ask for.
 
